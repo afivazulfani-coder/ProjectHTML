@@ -3,57 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Pribadi</title>
+
+    <title>Untuk ayah dan Ibu ❤️</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e0e7ff;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg,
+                #ffe4ec,
+                #fff0f5,
+                #fce7f3
+            );
+            color: #6b3045;
             text-align: center;
         }
 
         .container {
-            background-color: white;
-            width: 70%;
-            max-width: 500px;
-            margin: 80px auto;
+            width: 85%;
+            max-width: 650px;
+            margin: 50px auto;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px gray;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px #d88ba533;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: detak 1s infinite;
         }
 
         h1 {
-            color: #4f46e5;
+            color: #d63384;
+            font-size: 35px;
         }
 
-        h3 {
-            color: #ec4899;
+        h2 {
+            color: #c2185b;
         }
 
         p {
-            color: #444;
-            line-height: 1.6;
+            font-size: 16px;
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        .nama {
+            text-align: center;
+            font-weight: bold;
+            color: #d63384;
         }
 
         button {
-            background-color: #4f46e5;
+            background: #e75480;
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
+            padding: 14px 25px;
+            border-radius: 25px;
+            font-size: 16px;
             cursor: pointer;
+            margin-top: 15px;
         }
 
         button:hover {
-            background-color: #3730a3;
+            background: #c2185b;
         }
 
         #pesan {
-            color: #4f46e5;
-            font-weight: bold;
-            margin-top: 20px;
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background: #fff0f5;
+            border-radius: 15px;
+            color: #ad1457;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #ad7187;
+        }
+
+        @keyframes detak {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 82%;
+                padding: 20px;
+                margin: 25px auto;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            p {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
@@ -62,35 +123,98 @@
 
     <div class="container">
 
-        <h1>Halo, Saya Afiva!</h1>
+        <div class="heart">❤️</div>
 
-        <h3>Mahasiswa</h3>
+        <h1>Untuk Ayah dan Ibu</h1>
+
+        <h2>Dari Anakmu Tersayang 🥹</h2>
 
         <p>
-            Selamat datang di website profil pribadi saya.
-            Saya sedang belajar membuat website menggunakan HTML.
+            Ayah dan Ibu tersayang, terima kasih untuk setiap
+            doa, pengorbanan, dan kasih sayang yang tidak pernah
+            berhenti kalian berikan kepadaku.
         </p>
 
-        <hr>
+        <p>
+            Maaf jika selama ini Pipa belum menjadi anak yang
+            sempurna. Maaf jika ada perkataan atau perbuatanku
+            yang pernah membuat kalian kecewa.
+        </p>
 
-        <h3>Profil Saya</h3>
+        <p>
+            Pipa mungkin belum bisa memberikan banyak hal.
+            Pipa juga belum bisa membalas semua perjuangan
+            kalian selama membesarkanku. Tetapi aku berjanji
+            akan terus berusaha dan belajar menjadi lebih baik.
+        </p>
 
-        <p>Nama: Afiva</p>
-        <p>Hobi: Turu Sampai Lupa Waktu</p>
-        <p>Cita-cita: CEO Muda</p>
+        <p>
+            Doakan aku agar bisa meraih cita-cita, menyelesaikan
+            pendidikanku, mendapatkan pekerjaan yang baik,
+            dan suatu hari nanti bisa membahagiakan kalian.
+        </p>
 
-        <button onclick="tampilkanPesan()">
-            Klik Saya
+        <p>
+            Aku ingin melihat Ayah dan Ibu tersenyum bangga.
+            Aku ingin suatu hari nanti kalian bisa menikmati
+            hasil perjuanganku tanpa harus khawatir tentang
+            masa depanku.
+        </p>
+
+        <p>
+            <strong>
+                Tunggu aku sukses, ya, Ayah, Ibu.
+            </strong>
+            Pipa ingin membuktikan bahwa semua doa dan
+            pengorbanan kalian tidak pernah sia-sia.
+        </p>
+
+        <p class="nama">
+            Pipa sayang Ayah dan Ibu, hari ini, esok,
+            dan selamanya. ❤️
+        </p>
+
+        <button onclick="bukaPesan()">
+            Buka Pesan Rahasia 💌
         </button>
 
-        <p id="pesan"></p>
+        <div id="pesan">
+            <h2>Pesan Kecil untuk Kalian ❤️</h2>
+
+            <p>
+                Ya Allah, jagalah Ayah dan Ibu ku di setiap
+                langkah mereka. Berikan mereka kesehatan,
+                umur yang panjang, hati yang tenang, dan
+                kebahagiaan yang tidak pernah putus.
+            </p>
+
+            <p>
+                Izinkan aku menjadi alasan mereka tersenyum
+                dan bangga. Semoga suatu hari nanti aku bisa
+                membalas semua kasih sayang yang telah
+                mereka berikan kepadaku.
+            </p>
+
+            <p class="nama">
+                Amin. Pipa sayang kalian. ❤️
+            </p>
+        </div>
+
+        <footer>
+            Dibuat dengan penuh cinta untuk Ayah dan Ibu ❤️
+        </footer>
 
     </div>
 
     <script>
-        function tampilkanPesan() {
-            document.getElementById("pesan").innerHTML =
-                "Terima kasih sudah mengunjungi website saya! 😊";
+        function bukaPesan() {
+            let pesan = document.getElementById("pesan");
+
+            if (pesan.style.display === "block") {
+                pesan.style.display = "none";
+            } else {
+                pesan.style.display = "block";
+            }
         }
     </script>
 
